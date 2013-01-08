@@ -2,19 +2,19 @@
 /*
 ##########################################################################
 #                      PHP Benchmark Performance Script                  #
-#                         © 2010 Code24 BV                               # 
+#                         © 2010 Code24 BV                               #
 #                                                                        #
 #  Author      : Alessandro Torrisi                                      #
 #  Company     : Code24 BV, The Netherlands                              #
 #  Date        : July 31, 2010                                           #
 #  version     : 1.0                                                     #
 #  License     : Creative Commons CC-BY license                          #
-#  Website     : http://www.php-benchmark-script.com                     #	
+#  Website     : http://www.php-benchmark-script.com                     #
 #                                                                        #
 ##########################################################################
 */
 
-	function test_Math($count = 140000) {
+  function test_Math($count = 140000) {
 		$time_start = microtime(true);
 		$mathFunctions = array("abs", "acos", "asin", "atan", "bindec", "floor", "exp", "sin", "tan", "pi", "is_finite", "is_nan", "sqrt");
 		foreach ($mathFunctions as $key => $function) {
@@ -27,8 +27,8 @@
 		}
 		return number_format(microtime(true) - $time_start, 3);
 	}
-	
-	
+
+
 	function test_StringManipulation($count = 130000) {
 		$time_start = microtime(true);
 		$stringFunctions = array("addslashes", "chunk_split", "metaphone", "strip_tags", "md5", "sha1", "strtoupper", "strtolower", "strrev", "strlen", "soundex", "ord");
@@ -52,7 +52,7 @@
 		return number_format(microtime(true) - $time_start, 3);
 	}
 
-	
+
 	function test_IfElse($count = 9000000) {
 		$time_start = microtime(true);
 		for ($i=0; $i < $count; $i++) {
@@ -62,9 +62,8 @@
 			}
 		}
 		return number_format(microtime(true) - $time_start, 3);
-	}	
-	
-	
+	}
+
 	$total = 0;
 	$functions = get_defined_functions();
 	$line = str_pad("-",38,"-");
@@ -76,5 +75,5 @@
         }
 	}
 	echo str_pad("-", 38, "-") . "\n" . str_pad("Total time:", 25) . " : " . $total ." sec.</pre>";
-	
+
 ?>
