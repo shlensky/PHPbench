@@ -74,6 +74,6 @@
             echo str_pad($user, 25) . " : " . $result ." sec.\n";
         }
 	}
-	echo str_pad("-", 38, "-") . "\n" . str_pad("Total time:", 25) . " : " . $total ." sec.</pre>";
+	echo str_pad("=", 38, "=") . "\n" . str_pad("Total time:", 25) . " : " . $total ." sec.</pre>";
 
 ?>
