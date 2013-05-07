@@ -2,7 +2,7 @@
 /*
 ##########################################################################
 #                      PHP Benchmark Performance Script                  #
-#                         ï¿½ 2010 Code24 BV                               #
+#                         © 2010 Code24 BV                               #
 #                                                                        #
 #  Author      : Alessandro Torrisi                                      #
 #  Company     : Code24 BV, The Netherlands                              #
